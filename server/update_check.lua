@@ -1,5 +1,5 @@
-local url = "https://raw.githubusercontent.com/TGRHavoc/live_map/master/version.json"
-local version = "2.1.7"
+local url = "https://raw.githubusercontent.com/Dishairano/SuperGMSLivemap/master/version.json"
+local version = "1.0.0"
 local latest = true
 
 local rawData = LoadResourceFile(GetCurrentResourceName(), "version.json")
