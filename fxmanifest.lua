@@ -5,7 +5,7 @@ author "SuperGMS"
 description ""
 version "1.0.0"
 
-client_script "lient/*.lua"
+client_script "client/*.lua"
 exports {
     "reverseWeaponHash", "reverseVehicleHash", "reverseStreetHash",
     "reverseZoneHash", "reverseAreaHash"
