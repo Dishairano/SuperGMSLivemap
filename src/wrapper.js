@@ -43,7 +43,6 @@ const EventsWrapper = (SocketController) => {
         SocketController.RemovePlayer(GetPlayerIdentifier(source, 0));
     });
 
-    // Internal events for server-side scripts. See https://github.com/TGRHavoc/live_map/issues/45
     on("livemap:internal_AddPlayerData", (id, k, d) => {
         SocketController.AddPlayerData(id, k, d);
     });

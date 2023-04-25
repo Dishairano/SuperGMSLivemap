@@ -26423,7 +26423,6 @@ const BlipController = (SocketController) => {
     RegisterCommand("blips", (src, args) => {
         if (src === 0) {
             blipLog.warn("Please run this command in game. Make sure you have ACE permissions set up");
-            blipLog.warn("https://docs.tgrhavoc.me/livemap-resource/faq/#how-do-i-get-blips");
             return;
         }
 
@@ -26678,7 +26677,6 @@ const EventsWrapper = (SocketController) => {
         SocketController.RemovePlayer(GetPlayerIdentifier(source, 0));
     });
 
-    // Internal events for server-side scripts. See https://github.com/TGRHavoc/live_map/issues/45
     on("livemap:internal_AddPlayerData", (id, k, d) => {
         SocketController.AddPlayerData(id, k, d);
     });

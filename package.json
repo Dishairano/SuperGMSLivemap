@@ -1,5 +1,5 @@
 {
-    "name": "SuperGMSLiveMap",
+    "name": "SuperGMS_Livemap",
     "version": "1.0.0",
     "description": "The FiveM resource to get SuperGMS' LiveMap working#",
     "main": "index.js",
@@ -10,14 +10,13 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/TGRHavoc/live_map.git"
+        "url": "git+https://github.com/Dishairano/SuperGMSLivemap.git"
     },
-    "author": "Havoc",
+    "author": "Dishairano",
     "license": "GPL-3.0",
     "bugs": {
-        "url": "https://github.com/TGRHavoc/live_map/issues"
     },
-    "homepage": "https://github.com/TGRHavoc/live_map#readme",
+    "homepage": "https://github.com/Dishairano/SuperGMSLivemap#readme",
     "dependencies": {
         "koa": "^2.7.0",
         "koa-body": "^4.1.0",

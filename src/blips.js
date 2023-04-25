@@ -236,6 +236,20 @@ const BlipController = (SocketController) => {
         delete blips[sprite][blipToDelete];
         SocketController.RemoveBlip(sprite, closest);
     });
+
+    RegisterCommand("blips", (src, args) => {
+        if (src === 0) {
+            blipLog.warn("Please run this command in game. Make sure you have ACE permissions set up");
+            return;
+        }
+
+        let playerIdentifier = GetPlayerIdentifier(src, 0);
+        if (args[0] === "generate") {
+            playerWhoGeneratedBlips = playerIdentifier;
+            blipLog.warn("Generating blips using the in-game natives: Player %s is generating them.", playerIdentifier);
+            emitNet("livemap:getBlipsFromClient", src);
+        }
+    }, true);
     
     return {
         getBlips

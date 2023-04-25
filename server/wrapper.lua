@@ -5,7 +5,7 @@ This is the original implementation of a "wrapper" that allows users to trigger 
     Adds some data to a player. That will get sent to the UI via websockets
 
     @param k The name of the data to add to the player (e.g. "Name")
-    @param v The value to set the data to (e.g. "Havoc")
+    @param v The value to set the data to (e.g. "Dishairano")
 
     Note: This MUST be triggered from a client
 ]] RegisterServerEvent("livemap:AddPlayerData")
